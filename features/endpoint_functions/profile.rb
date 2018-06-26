@@ -16,7 +16,7 @@ def check_profile_info(user)
   #Check if firstName is correct
   assert_equal(user.firstName, response_hash['firstName'], 'firstName is not correct!')
   #Check if lastName is correct
-  assert_equal(user.firstName, response_hash['firstName'], 'lastName is not correct!')
+  assert_equal(user.lastName, response_hash['lastName'], 'lastName is not correct!')
 end
 
 def edit_profile_information(user, firstName, lastName)
