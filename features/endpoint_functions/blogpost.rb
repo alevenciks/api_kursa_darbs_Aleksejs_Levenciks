@@ -28,7 +28,7 @@ def update_blogpost_negative(user, blogpostId)
 
   response_hash = JSON.parse(response)
   #check if correct error message returned
-  assert_equal("You cannot delete a post that has not been created by you!",
+  assert_equal("You cannot edit a post that has not been created by you!",
                response_hash['message'], 'Error message is not correct')
 
   puts response_hash
